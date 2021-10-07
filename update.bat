@@ -9,4 +9,15 @@ echo #    Code By : VHC Development    #
 echo #    Github  : github.com/vhcid   #
 echo #                                 #
 echo #=================================#
-echo Before You're Using This Updater, Please Read Our EULA.
+echo Before You're Using This Updater, Please Read Our EULA
+echo EULA : https://github.com/vhcid/public-vo/blob/main/terms.md
+echo 1. YES [Y]
+echo 2. NO [N]
+choice /c YN /m "Do You Agree Our End User Licenses Agreement ?"
+if errorlevel 2 exit
+if errorlevel 1 goto choose
+GOTO End
+:End
+
+:choose
+cls
