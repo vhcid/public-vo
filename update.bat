@@ -21,3 +21,14 @@ GOTO End
 
 :choose
 cls
+
+echo Are You Want To One Time Download or Auto Update Every You Turn On Your Computer ?
+echo 1. One Time Update[A]
+echo 2. Auto Update[B]
+
+choice /c AB /m "What Are Choose ?"
+if errorlevel 2 goto auto
+if errorlevel 1 goto onetime
+
+:onetime
+cls
